@@ -5,6 +5,13 @@ import { useRouter } from "next/navigation";
 
 function IntroSection() {
   const router = useRouter();
+  function downloadCV() {
+    const pdfURL = "/Aagam_Doshi_CV.pdf";
+    const anchorElement = document.createElement("a");
+    anchorElement.href = pdfURL;
+    anchorElement.download = "Aagam_Doshi_CV.pdf";
+    anchorElement.click();
+  }
   return (
     <section>
       <div className="Intro grid grid-cols-1 sm:grid-cols-12 ">
@@ -32,7 +39,10 @@ function IntroSection() {
             >
               Hire Me
             </button>
-            <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 border border-white mt-3 w-full sm:w-fit">
+            <button
+              className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-300 bg-white text-black mt-3 w-full sm:w-fit"
+              onClick={() => downloadCV()}
+            >
               Download CV
             </button>
           </div>
