@@ -30,7 +30,7 @@ const TAB_DATA = [
         <span className="text-[12px] text-gray-400">
           MARCH 2021 - TILL PRESENT
         </span>
-        <p className="text-base">Office 365 Administrator</p>
+        <p className="text-sm">Office 365 Administrator</p>
         <p className="text-sm text-justify">
           Good knowledge of Retention policies, Retention tags, Litigation hold,
           eDiscovery, Data loss protection. Experience with creating users,
@@ -51,7 +51,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <>
-        <p className="text-xl">NeoGCamp - Web Development Bootcamp</p>
+        <p className="text-base">NeoGCamp - Web Development Bootcamp</p>
         <span className="text-[12px] text-gray-400">FEB 2023 - FEB 2024</span>
         <p className="text-base">
           S.k Somaiya College of Arts, Science & Commerce - [BSCIT]
