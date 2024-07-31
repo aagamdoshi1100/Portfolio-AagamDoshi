@@ -10,9 +10,9 @@ const TAB_DATA = [
     content: (
       <>
         <p>JavaScript</p>
-        <p>React</p>
-        <p>Next.js</p>
-        <p>Node.js</p>
+        <p>ReactJs</p>
+        <p>NextJs</p>
+        <p>NodeJs</p>
         <p>Express</p>
         <p>MongoDB</p>
         <p>HTML</p>
@@ -28,20 +28,16 @@ const TAB_DATA = [
       <>
         <p className="text-xl">Software Engineer at Capgemini </p>
         <span className="text-[12px] text-gray-400">
-          MARCH 2021 - TILL PRESENT
+          July 2022 - TILL PRESENT
         </span>
-        <p className="text-sm">Office 365 Administrator</p>
+        <p className="text-sm">MERN Stack developer</p>
         <p className="text-sm text-justify">
-          Good knowledge of Retention policies, Retention tags, Litigation hold,
-          eDiscovery, Data loss protection. Experience with creating users,
-          mailboxes, Distribution groups, shared mailboxes, resource mailboxes.
-          Good knowledge in Sharepoint management like access issues,
-          restoration, user id mismatch issues. Strong expertise on E-Mailbox
-          (Exchange & O365) management like Mailbox permission, delegation,
-          quota management, email routing/tracking (internal & external), mail
-          transport rule creation/modiﬁcation Expertise on Mailbox
-          Restoration,data transfer across Mailboxes etc Good ability to perform
-          bulk license operations and restorations using Powershell.
+          Developed a case tracking panel that improved efficiency by 40%.
+          Designed and implemented responsive user data forms with real-time
+          validation using Zod. Utilized Redux Toolkit for global state
+          management. <br /> Built backend APIs with Node.js and Express.js for
+          case data management. Designed optimized MongoDB schemas, enhancing
+          query performance by 25%.
         </p>
       </>
     ),
