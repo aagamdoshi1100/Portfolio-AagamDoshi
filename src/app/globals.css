@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bottom: 17px;
 }
 
 @theme inline {
@@ -29,4 +32,16 @@ body {
   .profileImg {
     grid-row: 1 / 2;
   }
+}
+
+.expSwiper {
+  width: 100%;
+  height: 100%;
+}
+.expSwiper .swiper-slide {
+  height: auto !important;
+}
+
+.expSwiper .swiper-wrapper {
+  margin-bottom: 50px;
 }

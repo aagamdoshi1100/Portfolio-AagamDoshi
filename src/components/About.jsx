@@ -20,9 +20,9 @@ function About({ data }) {
             {data?.[0]?.education && "Education"}
           </h4>
           {data?.[0]?.education &&
-            data?.[0]?.education?.map((edu) => {
+            data?.[0]?.education?.map((edu, index) => {
               return (
-                <div className="mb-4">
+                <div key={index} className="mb-4">
                   <p className="text-sm text-slate-400">{edu?.institution}</p>
                   <p className="text-sm text-slate-400">{edu?.degree}</p>
                   <p className="text-sm text-slate-400">{edu?.year}</p>
@@ -33,9 +33,11 @@ function About({ data }) {
         <div className="flex flex-wrap gap-3  md:gap-5 items-center justify-center mx-auto">
           {data?.[0]?.knownStack &&
             data?.[0]?.knownStack.map((stack, index) => (
-              <div className="flex bg-[#242424] rounded-md p-3 items-center gap-4 w-[47%] md:w-[45%] lg:w-[30%] h-[70px] cursor-pointer">
+              <div
+                className="flex bg-[#242424] rounded-md p-3 items-center gap-4 w-[47%] md:w-[45%] lg:w-[30%] h-[70px] cursor-pointer"
+                key={index}
+              >
                 <Image
-                  key={index}
                   src={stack.src}
                   alt={stack.alt}
                   width={stack.width}
