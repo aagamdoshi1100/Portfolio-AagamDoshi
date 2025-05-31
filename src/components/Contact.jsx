@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="bg-[#242424] md:w-[50%] mx-auto rounded-md gap-4 p-4"
+      className="bg-[#242424] lg:w-[50%] mx-auto rounded-md gap-4 p-4"
     >
       <h5 className="text-3xl font-bold text-white my-2 text-center">
         Let's connect
@@ -15,7 +15,7 @@ function Contact() {
         email, LinkedIn or WhatsApp — I'd be glad to hear from you!
       </p>
       <div className="flex gap-3 justify-center items-center">
-        <Link href="mailto:aagamdoshi1100@gmail.com" class="">
+        <Link href="mailto:aagamdoshi1100@gmail.com">
           <Image
             width="48"
             height="48"

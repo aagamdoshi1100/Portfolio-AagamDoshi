@@ -1,7 +1,7 @@
 const fetchData = async (apiEndpoint) => {
   try {
     const response = await fetch(`${process.env.BASE_URL}${apiEndpoint}`, {
-      next: { revalidate: 0 },
+      next: { revalidate: 3660 },
     });
     const responseData = await response.json();
     return responseData;

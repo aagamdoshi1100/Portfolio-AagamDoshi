@@ -17,7 +17,7 @@ function IntroSection({ name }) {
     <section>
       <div className="Intro flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="">
-          <h1 className="text-white font-extrabold mb-4 md:flex min-h-[80px] md:min-h-[40px]">
+          <h1 className="text-white font-extrabold mb-4 lg:flex min-h-[80px] md:min-h-[40px]">
             <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Hello, I'm{" "}
             </span>

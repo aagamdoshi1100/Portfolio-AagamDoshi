@@ -43,6 +43,10 @@ body {
   height: auto !important;
 }
 
+.projectCard:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
 @media (max-width: 767px) {
   .profileImg {
     grid-row: 1 / 2;

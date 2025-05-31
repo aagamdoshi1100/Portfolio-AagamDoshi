@@ -1,14 +1,14 @@
 import connectDB from "../../../utils/connectDB";
-import experiences from "../../../models/experiences";
+import projects from "../../../models/projects";
 import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
     await connectDB();
-    const experienceData = await experiences.find({});
+    const projectsData = await projects.find({});
 
     return NextResponse.json(
-      { message: "Success", data: experienceData },
+      { message: "Success", data: projectsData },
       { status: 200 }
     );
   } catch (e) {
