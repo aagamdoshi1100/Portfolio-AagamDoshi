@@ -1,5 +1,12 @@
 @import "tailwindcss";
-
+html{
+    scroll-behavior: smooth;
+}
+#about,
+#experience,
+#contact {
+  scroll-margin-top: 90px;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,12 +35,6 @@ body {
   font-family: var(--Nunito_Sans);
 }
 
-@media (max-width: 767px) {
-  .profileImg {
-    grid-row: 1 / 2;
-  }
-}
-
 .expSwiper {
   width: 100%;
   height: 100%;
@@ -42,6 +43,11 @@ body {
   height: auto !important;
 }
 
-.expSwiper .swiper-wrapper {
-  margin-bottom: 50px;
+@media (max-width: 767px) {
+  .profileImg {
+    grid-row: 1 / 2;
+  }
+  .expSwiper .swiper-wrapper {
+    margin-bottom: 50px;
+  }
 }

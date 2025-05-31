@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Experience = ({ data }) => {
   return (
-    <div>
+    <section id="experience">
       <h2 className="text-center md:text-left text-3xl font-bold mb-4">
         Experience
       </h2>
@@ -21,7 +21,7 @@ const Experience = ({ data }) => {
             dynamicBullets: true, // Makes dots scale slightly when active
           }}
           slidesPerView={1}
-          spaceBetween={0}
+          spaceBetween={10}
           className="expSwiper"
           breakpoints={{
             767: {
@@ -98,7 +98,7 @@ const Experience = ({ data }) => {
             ))}
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 };
 

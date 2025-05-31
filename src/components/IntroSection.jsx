@@ -39,7 +39,7 @@ function IntroSection({ name }) {
               href="https://wa.me/918169975445?text=Hi"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-3 px-6 rounded-full mb-4 md:mb-0 mr-4 hover:bg-[#1c7f6a] flex justify-center gap-2 w-full sm:w-fit bg-gradient-to-r bg-[#00a884] text-white text-md"
+              className="py-3 px-6 rounded-full mb-4 md:mb-0 mr-4 hover:bg-[#24b661cf] flex justify-center gap-2 w-full sm:w-fit bg-gradient-to-r bg-[#24b661] text-white text-md"
             >
               Chat on WhatsApp
               <Image

@@ -7,7 +7,10 @@ function MenuOverlay({ links }) {
         <NavLink href={"#about"} text={"About"} />
       </li>
       <li>
-        <NavLink href={"#projects"} text={"Projects"} />
+        <NavLink href={"#experience"} text={"Experience"} />
+      </li>
+      <li>
+        <NavLink href={"/projects"} text={"Projects"} />
       </li>
       <li>
         <NavLink href={"#contact"} text={"Contact"} />

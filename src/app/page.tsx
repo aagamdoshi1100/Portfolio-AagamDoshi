@@ -2,6 +2,7 @@ import IntroSection from "@/components/IntroSection";
 import fetchData from "@/utils/fetchData";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 export default async function Home() {
   const aboutMeData = await fetchData("/api/aboutme");
@@ -12,6 +13,7 @@ export default async function Home() {
       <IntroSection name={aboutMeData?.data?.[0]?.name ?? ""} />
       <About data={aboutMeData?.data ?? []} />
       <Experience data={experienceData?.data ?? []} />
+      <Contact />
     </main>
   );
 }
