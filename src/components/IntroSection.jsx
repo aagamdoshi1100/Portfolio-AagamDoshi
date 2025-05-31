@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-function IntroSection() {
+function IntroSection({ name }) {
   const router = useRouter();
   function downloadCV() {
     const pdfURL = "/Aagam_Doshi_Frontend_Developer.pdf";
@@ -23,14 +23,14 @@ function IntroSection() {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={["Aagam Doshi", 2000, "Web Developer", 2000]}
+              sequence={[name, 2000, "Web Developer", 2000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
               className="text-4xl md:ml-2"
             />
           </h1>
-          <p className="text-md mb-4">
+          <p className="text-md mb-4 text-slate-400">
             I'm a web developer actively seeking new opportunities and my inbox
             is open for messages.
           </p>
@@ -41,7 +41,7 @@ function IntroSection() {
               rel="noopener noreferrer"
               className="py-3 px-6 rounded-full mb-4 md:mb-0 mr-4 hover:bg-[#1c7f6a] flex justify-center gap-2 w-full sm:w-fit bg-gradient-to-r bg-[#00a884] text-white text-md"
             >
-              Contact me on Whatsapp
+              Chat on WhatsApp
               <Image
                 unoptimized
                 width="24"
