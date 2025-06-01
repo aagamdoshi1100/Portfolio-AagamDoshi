@@ -9,4 +9,4 @@ const connectDB = async () => {
     console.log("Failed to connect database", error);
   }
 };
-module.exports = connectDB;
+export default connectDB;
