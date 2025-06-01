@@ -1,6 +1,6 @@
 @import "tailwindcss";
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 #about,
 #experience,
@@ -8,11 +8,12 @@ html{
   scroll-margin-top: 90px;
 }
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #191717;
+  --foreground: #ededed;
   --swiper-pagination-bullet-size: 12px;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-bottom: 17px;
+  --lightgray: #242424;
 }
 
 @theme inline {
@@ -44,8 +45,8 @@ body {
 }
 
 .projectCard:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+  flex-direction: row-reverse;
+}
 
 @media (max-width: 767px) {
   .profileImg {
