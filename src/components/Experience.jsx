@@ -37,7 +37,7 @@ const Experience = ({ data }) => {
           {data &&
             data?.map((data, index) => (
               <SwiperSlide key={index} className="bg-[#242424] rounded-md p-4">
-                <div className="flex flex-col md:flex-row items-center  gap-4 align-top justify-start">
+                <div className="flex flex-col md:flex-row items-center md:items-start  gap-4 align-top justify-start">
                   <Image
                     src={data?.companyLogo}
                     width={300}
@@ -49,27 +49,32 @@ const Experience = ({ data }) => {
                     <h3 className="text-center md:text-left text-base mb-2 md:mb-1 leading-5">
                       {data.role}
                     </h3>
-                    <p className="text-center md:text-left text-xs text-slate-400 mb-2 md:mb-1">
+                    <p className="text-center md:text-left text-base md:text-xs text-slate-400 mb-2 md:mb-1">
                       {data?.duration}
                     </p>
                   </div>
                 </div>
                 <ul className="custom-list mt-2">
                   {data.responsibilities?.map((res, index) => (
-                    <li key={index} className="text-xs mb-2 text-slate-400">
+                    <li
+                      key={index}
+                      className="text-base md:text-xs mb-2 text-slate-400"
+                    >
                       {res}
                     </li>
                   ))}
                 </ul>
                 {data?.projects?.length > 0 && (
                   <>
-                    <p className="text-sm mt-4 mb-1">Key Projects</p>
+                    <p className="text-base md:text-sm mt-4 mb-1">
+                      Key Projects
+                    </p>
                     <ul className="flex gap-x-3 flex-wrap">
                       {data?.projects?.length > 0 &&
                         data?.projects?.map((project, index) => (
                           <li
                             key={index}
-                            className="text-xs underline text-slate-400"
+                            className="text-base md:text-xs underline text-slate-400"
                           >
                             <Link href={project.link ?? "#"}>
                               {project.name}
@@ -81,12 +86,14 @@ const Experience = ({ data }) => {
                 )}
                 {data?.technologies?.length > 0 && (
                   <>
-                    <p className="text-sm mt-4 mb-1">Technologies</p>
+                    <p className="text-base md:text-sm mt-4 mb-1">
+                      Technologies
+                    </p>
                     <ul className="flex flex-wrap gap-x-2">
                       {data?.technologies?.map((res, index) => (
                         <li
                           key={index}
-                          className="text-xs text-slate-300 bg-slate-500 rounded-md p-2 my-1"
+                          className="text-base md:text-xs text-slate-300 bg-slate-500 rounded-md p-2 my-1"
                         >
                           {res}
                         </li>

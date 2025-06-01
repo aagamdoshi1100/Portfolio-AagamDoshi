@@ -15,7 +15,7 @@ export default async function Home() {
   const aboutMeData = JSON.parse(JSON.stringify(aboutMeRaw));
   const experienceData = JSON.parse(JSON.stringify(experienceRaw));
   return (
-    <main className="w-[90%] md:w-[85%] grid gap-20 mx-auto py-4 my-20">
+    <main className="w-[90%] md:w-[85%] grid gap-14 md:gap-20 mx-auto py-4 my-20">
       <IntroSection name={aboutMeData?.[0]?.name ?? ""} />
       <About data={aboutMeData ?? []} />
       <Experience data={experienceData ?? []} />

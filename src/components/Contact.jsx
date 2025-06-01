@@ -10,7 +10,7 @@ function Contact() {
       <h5 className="text-3xl font-bold text-white my-2 text-center">
         Let's connect
       </h5>
-      <p className="text-slate-400 text-sm mb-4 max-w-wd text-center">
+      <p className="text-slate-400 text-base mb-4 max-w-wd text-center">
         I'm actively open to new opportunities. Feel free to reach out via
         email, LinkedIn or WhatsApp — I'd be glad to hear from you!
       </p>

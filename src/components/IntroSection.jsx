@@ -30,7 +30,7 @@ function IntroSection({ name }) {
               className="text-4xl md:ml-2"
             />
           </h1>
-          <p className="text-md mb-4 text-slate-400">
+          <p className="text-base mb-4 text-slate-400">
             I'm a web developer actively seeking new opportunities and my inbox
             is open for messages.
           </p>
@@ -39,7 +39,7 @@ function IntroSection({ name }) {
               href="https://wa.me/918169975445?text=Hi"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-3 px-6 rounded-full mb-4 md:mb-0 mr-4 hover:bg-[#24b661cf] flex justify-center gap-2 w-full sm:w-fit bg-gradient-to-r bg-[#24b661] text-white text-md"
+              className="py-3 px-6 rounded-full mb-4 md:mb-0 mr-4 hover:bg-[#24b661cf] flex justify-center gap-2 w-full sm:w-fit bg-gradient-to-r bg-[#24b661] text-white text-base"
             >
               Chat on WhatsApp
               <Image
@@ -52,7 +52,7 @@ function IntroSection({ name }) {
               />
             </Link>
             <button
-              className="px-6 py-3 rounded-full hover:bg-slate-300 bg-white text-black sm:mt-3 md:mt-0 w-full sm:w-fit text-md cursor-pointer"
+              className="px-6 py-3 rounded-full hover:bg-slate-300 bg-white text-black sm:mt-3 md:mt-0 w-full sm:w-fit text-base cursor-pointer"
               onClick={() => downloadCV()}
             >
               Download CV

@@ -12,20 +12,20 @@ function About({ data }) {
           <h2 className="text-center md:text-left text-3xl font-bold mb-4 md:mb-2">
             {data?.[0]?.summary && "About Me"}
           </h2>
-          <p className=" md:text-sm text-slate-400 text-sm text-justify mb-4">
+          <p className="text-slate-400 text-base text-justify mb-4">
             {data?.[0]?.summary}
           </p>
 
-          <h4 className="text-md mb-2 mt-4 md:mt-14">
+          <h4 className="text-lg mb-2 mt-4 md:mt-14">
             {data?.[0]?.education && "Education"}
           </h4>
           {data?.[0]?.education &&
             data?.[0]?.education?.map((edu, index) => {
               return (
                 <div key={index} className="mb-4">
-                  <p className="text-sm text-slate-400">{edu?.institution}</p>
-                  <p className="text-sm text-slate-400">{edu?.degree}</p>
-                  <p className="text-sm text-slate-400">{edu?.year}</p>
+                  <p className="text-base text-slate-400">{edu?.institution}</p>
+                  <p className="text-base text-slate-400">{edu?.degree}</p>
+                  <p className="text-base text-slate-400">{edu?.year}</p>
                 </div>
               );
             })}

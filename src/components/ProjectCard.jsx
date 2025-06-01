@@ -32,7 +32,7 @@ const ProjectCard = ({ details }) => {
           <div className="flex gap-2 mt-2 md:mt-0">
             <Link
               href={details?.link}
-              className=" bg-[#33333388] text-slate-300 rounded-md p-1 text-xs flex items-center gap-1"
+              className=" bg-[#33333388] text-slate-300 rounded-md p-1 text-base flex items-center gap-1"
             >
               <Image
                 width="24"
@@ -43,7 +43,7 @@ const ProjectCard = ({ details }) => {
             </Link>
             <Link
               href={details?.githubURL ?? "#"}
-              className=" bg-[#33333388] text-slate-300 rounded-md p-1 text-xs flex items-center gap-1"
+              className=" bg-[#33333388] text-slate-300 rounded-md p-1 text-base flex items-center gap-1"
             >
               <Image
                 width="24"
@@ -56,19 +56,22 @@ const ProjectCard = ({ details }) => {
         </div>
         <ul className="custom-list mt-2">
           {details.description?.map((res, index) => (
-            <li key={index} className="text-xs mb-2 text-slate-400">
+            <li
+              key={index}
+              className="text-base md:text-sm mb-2 text-slate-400"
+            >
               {res}
             </li>
           ))}
         </ul>
         {details?.stack?.length > 0 && (
           <>
-            <p className="text-sm mt-4 mb-1">Technologies</p>
+            <p className="text-base mt-4 mb-1">Technologies</p>
             <ul className="flex flex-wrap gap-x-2">
               {details?.stack?.map((res, index) => (
                 <li
                   key={index}
-                  className="text-xs text-slate-300 bg-slate-500 rounded-md p-2 my-1"
+                  className="text-base md:text-sm text-slate-300 bg-slate-500 rounded-md p-2 my-1"
                 >
                   {res}
                 </li>
