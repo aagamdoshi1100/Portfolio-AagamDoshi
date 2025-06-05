@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import PostHogProvider from "@/components/PostHogProvider";
+import UTMTracker from "@/components/UTMTracker";
 
 const NunitoSans = Nunito_Sans({
   variable: "--Nunito_Sans",
@@ -22,8 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${NunitoSans.variable} antialiased`}>
-        <Navbar />
-        {children}
+        <PostHogProvider>
+          <Navbar />
+          {children}
+        </PostHogProvider>
+        <UTMTracker />
       </body>
     </html>
   );

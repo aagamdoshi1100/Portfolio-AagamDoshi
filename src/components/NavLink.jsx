@@ -4,7 +4,7 @@ function NavLink({ href, text }) {
   return (
     <Link
       href={href}
-      className="text-slate-400 hover:text-white block text-base pl-3 pr-4 py-2"
+      className="text-[var(--lightgray)] hover:text-white block text-base pl-8 py-2"
     >
       {text}
     </Link>

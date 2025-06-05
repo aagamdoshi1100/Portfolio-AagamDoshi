@@ -9,10 +9,10 @@ function About({ data }) {
     <section className="about" id="about">
       <div className="md:grid md:grid-cols-2 md:gap-4">
         <div>
-          <h2 className="text-center md:text-left text-3xl font-bold mb-4 md:mb-2">
+          <h2 className="text-center md:text-left text-3xl font-bold mb-4 md:mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
             {data?.[0]?.summary && "About Me"}
           </h2>
-          <p className="text-slate-400 text-base text-justify mb-4">
+          <p className="text-[var(--lightgray)] text-base text-justify mb-4">
             {data?.[0]?.summary}
           </p>
 
@@ -23,9 +23,15 @@ function About({ data }) {
             data?.[0]?.education?.map((edu, index) => {
               return (
                 <div key={index} className="mb-4">
-                  <p className="text-base text-slate-400">{edu?.institution}</p>
-                  <p className="text-base text-slate-400">{edu?.degree}</p>
-                  <p className="text-base text-slate-400">{edu?.year}</p>
+                  <p className="text-base text-[var(--lightgray)]">
+                    {edu?.institution}
+                  </p>
+                  <p className="text-base text-[var(--lightgray)]">
+                    {edu?.degree}
+                  </p>
+                  <p className="text-base text-[var(--lightgray)]">
+                    {edu?.year}
+                  </p>
                 </div>
               );
             })}

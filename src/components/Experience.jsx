@@ -9,7 +9,7 @@ import Link from "next/link";
 const Experience = ({ data }) => {
   return (
     <section id="experience">
-      <h2 className="text-center md:text-left text-3xl font-bold mb-4">
+      <h2 className="text-center md:text-left text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
         Experience
       </h2>
       <div className="w-[90vw] md:w-[85vw] cursor-pointer">
@@ -42,14 +42,14 @@ const Experience = ({ data }) => {
                     src={data?.companyLogo}
                     width={300}
                     height={170}
-                    className="w-[100%] rounded-md md:w-[200px] h-auto object-contain"
+                    className="w-[100%] rounded-md md:w-[100px] h-auto object-contain"
                     alt={data?.company}
                   />
                   <div className="">
                     <h3 className="text-center md:text-left text-base mb-2 md:mb-1 leading-5">
                       {data.role}
                     </h3>
-                    <p className="text-center md:text-left text-base md:text-xs text-slate-400 mb-2 md:mb-1">
+                    <p className="text-center md:text-left text-base md:text-xs text-[var(--lightgray)] mb-2 md:mb-1">
                       {data?.duration}
                     </p>
                   </div>
@@ -58,7 +58,7 @@ const Experience = ({ data }) => {
                   {data.responsibilities?.map((res, index) => (
                     <li
                       key={index}
-                      className="text-base md:text-xs mb-2 text-slate-400"
+                      className="text-base md:text-xs mb-2 text-[var(--lightgray)]"
                     >
                       {res}
                     </li>
@@ -74,7 +74,7 @@ const Experience = ({ data }) => {
                         data?.projects?.map((project, index) => (
                           <li
                             key={index}
-                            className="text-base md:text-xs underline text-slate-400"
+                            className="text-base md:text-xs underline text-[var(--lightgray)]"
                           >
                             <Link href={project.link ?? "#"}>
                               {project.name}
@@ -93,7 +93,7 @@ const Experience = ({ data }) => {
                       {data?.technologies?.map((res, index) => (
                         <li
                           key={index}
-                          className="text-base md:text-xs text-slate-300 bg-slate-500 rounded-md p-2 my-1"
+                          className="text-base md:text-xs text-[var(--lightgray)] bg-[var(--darkgray)] rounded-md p-2 my-1"
                         >
                           {res}
                         </li>

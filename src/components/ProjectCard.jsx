@@ -32,7 +32,7 @@ const ProjectCard = ({ details }) => {
           <div className="flex gap-2 mt-2 md:mt-0">
             <Link
               href={details?.link}
-              className=" bg-[#33333388] text-slate-300 rounded-md p-1 text-base flex items-center gap-1"
+              className=" bg-[#33333388] text-[var(--lightgray)] rounded-md p-1 text-base flex items-center gap-1"
             >
               <Image
                 width="24"
@@ -43,7 +43,7 @@ const ProjectCard = ({ details }) => {
             </Link>
             <Link
               href={details?.githubURL ?? "#"}
-              className=" bg-[#33333388] text-slate-300 rounded-md p-1 text-base flex items-center gap-1"
+              className=" bg-[#33333388] text-[var(--lightgray)] rounded-md p-1 text-base flex items-center gap-1"
             >
               <Image
                 width="24"
@@ -58,7 +58,7 @@ const ProjectCard = ({ details }) => {
           {details.description?.map((res, index) => (
             <li
               key={index}
-              className="text-base md:text-sm mb-2 text-slate-400"
+              className="text-base md:text-sm mb-2 text-[var(--lightgray)]"
             >
               {res}
             </li>
@@ -71,7 +71,7 @@ const ProjectCard = ({ details }) => {
               {details?.stack?.map((res, index) => (
                 <li
                   key={index}
-                  className="text-base md:text-sm text-slate-300 bg-slate-500 rounded-md p-2 my-1"
+                  className="text-base md:text-sm text-[var(--lightgray)] bg-[var(--darkgray)] rounded-md p-2 my-1"
                 >
                   {res}
                 </li>

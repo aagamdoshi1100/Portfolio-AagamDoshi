@@ -12,7 +12,10 @@ function Navbar() {
   return (
     <nav className="navbar fixed top-0 left-0 right-0 bg-[#141010] bg-opacity-95 z-10">
       <div className="flex flex-wrap items-center justify-between md:w-[85%] mx-auto p-3 px-4 md:px-0">
-        <Link href={"/"} className="text-2xl font-extrabold">
+        <Link
+          href={"/"}
+          className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600"
+        >
           Aagam Doshi
         </Link>
         <div className="navbar-menu block md:hidden">

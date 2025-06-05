@@ -3,6 +3,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 function IntroSection({ name }) {
   const router = useRouter();
@@ -12,13 +13,16 @@ function IntroSection({ name }) {
     anchorElement.href = pdfURL;
     anchorElement.download = "Aagam_Doshi_Frontend_Developer.pdf";
     anchorElement.click();
+    posthog.capture("CV Downloaded", {
+      location: "Homepage",
+    });
   }
   return (
     <section>
       <div className="Intro flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="">
           <h1 className="text-white font-extrabold mb-4 lg:flex min-h-[80px] md:min-h-[40px]">
-            <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
               Hello, I'm{" "}
             </span>
             <br></br>
@@ -30,7 +34,7 @@ function IntroSection({ name }) {
               className="text-4xl md:ml-2"
             />
           </h1>
-          <p className="text-base mb-4 text-slate-400">
+          <p className="text-base mb-4 text-[var(--lightgray)] bg-clip-text bg-gradient-to-rd from-blue-400 to-blue-600">
             I'm a web developer actively seeking new opportunities and my inbox
             is open for messages.
           </p>
@@ -40,6 +44,11 @@ function IntroSection({ name }) {
               target="_blank"
               rel="noopener noreferrer"
               className="py-3 px-6 rounded-full mb-4 md:mb-0 mr-4 hover:bg-[#24b661cf] flex justify-center gap-2 w-full sm:w-fit bg-gradient-to-r bg-[#24b661] text-white text-base"
+              onClick={() =>
+                posthog.capture("Clicked On Whatsapp Btn", {
+                  location: "Homepage",
+                })
+              }
             >
               Chat on WhatsApp
               <Image
@@ -60,7 +69,7 @@ function IntroSection({ name }) {
           </div>
         </div>
         <div className="profileImg">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] mb-4 lg:mt-0 relative overflow-hidden">
+          <div className="rounded-[49px]  bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] mb-5 lg:mt-0 relative overflow-hidden">
             <Image
               src="/myImg.jpg"
               alt="mainPageImg"
