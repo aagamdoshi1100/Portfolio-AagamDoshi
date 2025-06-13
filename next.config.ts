@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
         pathname: "/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "www.somaiya.edu.in",
+        port: "",
+        pathname: "/**",
+        search: "",
+      },
     ],
   },
 };

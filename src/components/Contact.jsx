@@ -3,7 +3,10 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <section id="contact" className=" lg:w-[50%] mx-auto rounded-md gap-4 p-4">
+    <section
+      id="contact"
+      className=" lg:w-[50%] mx-auto rounded-md gap-4 p-4 pt-0"
+    >
       <h5 className="text-3xl font-bold  my-2 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
         Let's connect
       </h5>

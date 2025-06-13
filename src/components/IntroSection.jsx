@@ -50,7 +50,7 @@ function IntroSection({ name }) {
                 })
               }
             >
-              Chat on WhatsApp
+              Let’s Talk on
               <Image
                 unoptimized
                 width="24"

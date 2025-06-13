@@ -5,7 +5,7 @@ html {
 #about,
 #experience,
 #contact {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 150px;
 }
 :root {
   --background: #191717;

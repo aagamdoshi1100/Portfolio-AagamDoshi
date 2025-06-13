@@ -1,18 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import FadeIn from "@/components/Animations/FadeIn";
 
 function About({ data }) {
   if (!Array.isArray(data) || data?.length === 0 || !data) return <></>;
 
   return (
     <section className="about" id="about">
-      <div className="md:grid md:grid-cols-2 md:gap-4">
+      <div className="p-4 rounded-md md:grid md:grid-cols-2 md:gap-4 bg-[#242424]">
         <div>
-          <h2 className="text-center md:text-left text-3xl font-bold mb-4 md:mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+          <h2 className="text-3xl font-bold mb-4 md:mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
             {data?.[0]?.summary && "About Me"}
           </h2>
-          <p className="text-[var(--lightgray)] text-base text-justify mb-4">
+          <p className="text-[var(--lightgray)] text-base mb-4">
             {data?.[0]?.summary}
           </p>
 
@@ -36,11 +37,22 @@ function About({ data }) {
               );
             })}
         </div>
-        <div className="flex flex-wrap gap-3  md:gap-5 items-center justify-center mx-auto">
+        <div>
+          <Image
+            src="/SK-SomaiyaCollege.jpg"
+            width="850"
+            height="547"
+            className="object-cover  rounded-md"
+            alt="collegeImg"
+          />
+        </div>
+      </div>
+      <FadeIn>
+        <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 mt-10 md:mt-20 rounded-xl mx-auto ">
           {data?.[0]?.knownStack &&
             data?.[0]?.knownStack.map((stack, index) => (
               <div
-                className="flex bg-[#242424] rounded-md p-3 items-center gap-4 w-[47%] md:w-[45%] lg:w-[30%] h-[70px] cursor-pointer"
+                className="cursor-pointer hover:bg-[#242424] w-[46%] md:w-[140px] grid place-items-center p-3 rounded-md"
                 key={index}
               >
                 <Image
@@ -54,7 +66,7 @@ function About({ data }) {
               </div>
             ))}
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }
