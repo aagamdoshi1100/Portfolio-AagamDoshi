@@ -71,6 +71,7 @@ function IntroSection({ name }) {
         <div className="profileImg">
           <div className="rounded-[49px]  bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] mb-5 lg:mt-0 relative overflow-hidden">
             <Image
+              loading="eager"
               src="/myImg.jpg"
               alt="mainPageImg"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 md:w-[350px] "

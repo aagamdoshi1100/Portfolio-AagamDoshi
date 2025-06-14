@@ -14,8 +14,8 @@ const Projects = async () => {
     <section className="w-[90%] md:w-[85%] grid gap-8 md:gap-14 mx-auto py-4 my-20">
       {projectsData?.length > 0 &&
         projectsData?.map((pro, index) => (
-          <FadeIn>
-            <ProjectCard key={index} details={pro} />
+          <FadeIn key={index}>
+            <ProjectCard details={pro} />
           </FadeIn>
         ))}
     </section>

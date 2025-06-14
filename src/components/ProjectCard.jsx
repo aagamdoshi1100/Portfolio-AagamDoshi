@@ -5,7 +5,7 @@ import React from "react";
 const ProjectCard = ({ details }) => {
   return (
     <div className="projectCard md:flex md:gap-5 rounded-md cursor-pointer">
-      <div className="md:w-[49%] ">
+      <div className="md:w-[49%] min-h-[165px]">
         {details?.LinkedInVideo ? (
           <iframe
             src={details?.LinkedInVideo}
@@ -18,6 +18,8 @@ const ProjectCard = ({ details }) => {
           ></iframe>
         ) : (
           <Image
+            loading="eager"
+            priority
             src={"/overview360.png"}
             height={586}
             width={1200}
@@ -29,7 +31,7 @@ const ProjectCard = ({ details }) => {
       <div className="md:w-[49%] ">
         <div className="md:flex md:justify-between">
           <h3 className="mt-4 md:mt-0 text-xl">{details?.name}</h3>
-          <div className="flex gap-2 mt-2 md:mt-0">
+          <div className="flex gap-2 mt-2 md:mt-0 min-h-[32px]">
             <Link
               href={details?.link}
               className=" bg-[#33333388] text-[var(--lightgray)] rounded-md p-1 text-base flex items-center gap-1"
