@@ -11,7 +11,7 @@ function IntroSection({ name }) {
     const pdfURL = "/Aagam_Doshi_Frontend_Developer.pdf";
     const anchorElement = document.createElement("a");
     anchorElement.href = pdfURL;
-    anchorElement.download = "Aagam_Doshi_Frontend_Developer.pdf";
+    anchorElement.download = "Aagam_Doshi_MERN_Developer.pdf";
     anchorElement.click();
     posthog.capture("CV Downloaded", {
       location: "Homepage",
