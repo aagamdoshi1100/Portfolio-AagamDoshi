@@ -8,7 +8,7 @@ import posthog from "posthog-js";
 function IntroSection({ name }) {
   const router = useRouter();
   function downloadCV() {
-    const pdfURL = "/Aagam_Doshi_Frontend_Developer.pdf";
+    const pdfURL = "/Aagam_Doshi_MERN_Developer.pdf";
     const anchorElement = document.createElement("a");
     anchorElement.href = pdfURL;
     anchorElement.download = "Aagam_Doshi_MERN_Developer.pdf";
