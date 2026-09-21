@@ -52,12 +52,11 @@ function IntroSection({ name }) {
             >
               Let’s Talk on
               <Image
-                unoptimized
                 width="24"
                 height="24"
-                src="https://img.icons8.com/color/98/whatsapp--v1.png"
+                src="/whatsapp.png"
                 className="object-contain"
-                alt="whatsapp--v1"
+                alt="whatsapp"
               />
             </Link>
             <button
