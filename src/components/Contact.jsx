@@ -56,12 +56,11 @@ function Contact() {
           aria-label="Mobile Number"
         >
           <Image
-            unoptimized
             width="40"
             height="40"
-            src="https://img.icons8.com/fluency/48/phone--v1.png"
+            src="/telephone.png"
             className="object-contain"
-            alt="whatsapp--v1"
+            alt="call"
           />
         </Link>
       </div>
