@@ -35,7 +35,7 @@ const Experience = ({ data }) => {
           }}
         >
           {data &&
-            data?.sort((data, index) => data?.JobNo - index?.JobNo).map((data, index) => (
+            data?.sort((data, index) => index?.JobNo - data?.JobNo).map((data, index) => (
               <SwiperSlide key={index} className="bg-[#242424] rounded-md p-4">
                 <div className="flex flex-col md:flex-row items-center md:items-start  gap-4 align-top justify-start">
                   <Image
